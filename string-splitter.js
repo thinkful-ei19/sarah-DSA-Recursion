@@ -15,7 +15,7 @@
 
 function splitter(myString, predicate, word='') {
   if (myString === ''){
-    console.log(myString)
+    console.log(myString);
     return [word];
   }
   if(predicate(myString[myString.length - 1])) {
@@ -27,3 +27,5 @@ function splitter(myString, predicate, word='') {
 }
 
 console.log(splitter('split this string please', x => x === ' '));
+
+//iterative method - use indexOf()
